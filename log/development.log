@@ -1,0 +1,1153 @@
+/!\ FAILSAFE /!\  2010-06-26 13:05:57 +0530
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-06-26 13:06:03 +0530
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-06-26 13:06:30 +0530
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-06-26 14:40:22 +0530
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-06-26 14:40:32 +0530
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-06-26 14:41:40 +0530
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-06-26 14:41:56 +0530
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-06-26 14:42:10 +0530
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-06-26 14:43:26 +0530
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `block in require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:156:in `require'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:7:in `block in require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    E:/Program Files/ruby-1.9.1/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-06-26 19:34:14) [GET]
+Completed in 31ms (View: 16 | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-06-26 19:34:58) [GET]
+Completed in 16ms (View: 0 | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-26 19:39:39) [GET]
+
+ActionController::RoutingError (No route matches "/GenerateBoard/" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#index (for 127.0.0.1 at 2010-06-26 19:47:02) [GET]
+
+NoMethodError (undefined method `render_text' for #<GenerateBoardController:0x3e969c0>):
+  app/controllers/generate_board_controller.rb:4:in `index'
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (93.6ms)
+Rendered rescues/_request_and_response (31.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#index (for 127.0.0.1 at 2010-06-26 19:51:31) [GET]
+Completed in 7ms (View: 3 | 200 OK [http://localhost/GenerateBoard/]
+
+
+Processing GenerateBoardController#initialize (for 127.0.0.1 at 2010-06-26 21:58:56) [GET]
+
+ActionController::UnknownAction (No action responded to initialize. Actions: index):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#index (for 127.0.0.1 at 2010-06-26 21:59:09) [GET]
+
+NoMethodError (undefined method `new' for #<GenerateBoardController:0x2c52b00>):
+  app/controllers/generate_board_controller.rb:8:in `index'
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (109.2ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#index (for 127.0.0.1 at 2010-06-26 21:59:27) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/generate_board_controller.rb:8:in `index'
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#initialize (for 127.0.0.1 at 2010-06-26 22:01:32) [GET]
+
+ActionController::UnknownAction (No action responded to initialize. Actions: ):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#initialize (for 127.0.0.1 at 2010-06-26 22:02:29) [GET]
+
+ActionController::UnknownAction (No action responded to initialize. Actions: ):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#initialize (for 127.0.0.1 at 2010-06-26 22:02:50) [GET]
+
+ActionController::UnknownAction (No action responded to initialize. Actions: ):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#initialize (for 127.0.0.1 at 2010-06-26 23:31:32) [GET]
+
+ActionController::UnknownAction (No action responded to initialize. Actions: new):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:32:05) [GET]
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:33:29) [GET]
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:34:12) [GET]
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:34:38) [GET]
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:36:46) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:37:45) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-06-26 23:38:07) [GET]
+  Parameters: {"1"=>"2"}
+
+SyntaxError (E:/rails workspace/minesweeper/app/controllers/generate_board_controller.rb:6: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+		print request.query_parameters[:1]
+		                                 ^):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (97.5ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-06-26 23:38:24) [GET]
+  Parameters: {"1"=>"2"}
+
+SyntaxError (E:/rails workspace/minesweeper/app/controllers/generate_board_controller.rb:6: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+		print request.query_parameters{:1}
+		                                 ^):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (82.5ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:38:39) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:39:29) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:41:04) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:42:01) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:42:32) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:42:50) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:43:42) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-26 23:44:03) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 11:02:30) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 11:02:52) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 11:03:14) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 11:03:38) [GET]
+  Parameters: {"1"=>"2"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 11:04:06) [GET]
+  Parameters: {"mode"=>"Beginner"}
+
+ActionView::MissingTemplate (Missing template generate_board/new.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-06-27 11:04:28) [GET]
+  Parameters: {"mode"=>"Beginner"}
+
+SyntaxError (E:/rails workspace/minesweeper/app/controllers/generate_board_controller.rb:4: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+		mode = request.query_parameters[:1]
+		                                  ^):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (133.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-06-27 11:04:32) [GET]
+  Parameters: {"1"=>"2"}
+
+SyntaxError (E:/rails workspace/minesweeper/app/controllers/generate_board_controller.rb:4: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+		mode = request.query_parameters[:1]
+		                                  ^):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 12:14:20) [GET]
+  Parameters: {"1"=>"2"}
+Rendering generate_board/new
+Completed in 26ms (View: 23 | 200 OK [http://localhost/createBoard?1=2]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 12:19:29) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+
+ActionView::TemplateError (undefined local variable or method `recipes' for #<ActionView::Base:0x3c7e9a0>) on line #3 of app/views/generate_board/new.rhtml:
+1: hi how r u?
+2: 
+3: you selected mode: <% recipes.query_string[:mode]%>
+
+    app/views/generate_board/new.rhtml:3:in `_run_rhtml_app47views47generate_board47new46rhtml'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (100.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 12:19:59) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+
+ActionView::TemplateError (undefined local variable or method `recipes' for #<ActionView::Base:0x2ba2580>) on line #3 of app/views/generate_board/new.rhtml:
+1: hi how r u?
+2: 
+3: you selected mode: <% recipes.query_parameters[:mode]%>
+
+    app/views/generate_board/new.rhtml:3:in `_run_rhtml_app47views47generate_board47new46rhtml'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (100.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 12:20:03) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+
+ActionView::TemplateError (undefined local variable or method `recipes' for #<ActionView::Base:0x40d3540>) on line #3 of app/views/generate_board/new.rhtml:
+1: hi how r u?
+2: 
+3: you selected mode: <% recipes.query_parameters[:mode]%>
+
+    app/views/generate_board/new.rhtml:3:in `_run_rhtml_app47views47generate_board47new46rhtml'
+    <internal:prelude>:8:in `synchronize'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (160.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 12:20:19) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 33ms (View: 30 | 200 OK [http://localhost/createBoard?mode=Beginner]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 12:30:05) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 5ms (View: 3 | 200 OK [http://localhost/createBoard?mode=Beginner]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 12:38:48) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 6ms (View: 3 | 200 OK [http://localhost/createBoard?mode=Beginner]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 13:02:00) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 11ms (View: 10 | 200 OK [http://localhost/createBoard?mode=Beginner]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 13:02:20) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 29ms (View: 26 | 200 OK [http://localhost/createBoard?mode=Beginner]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 13:02:54) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 6ms (View: 3 | 200 OK [http://localhost/createBoard?mode=Beginner]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 13:04:23) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 27ms (View: 24 | 200 OK [http://localhost/createBoard?mode=Beginner]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-27 13:04:23) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/homePage.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 13:06:27) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 27ms (View: 25 | 200 OK [http://localhost/createBoard?mode=Beginner]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-27 13:06:27) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/homePage.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 19:05:24) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 15ms (View: 3 | 200 OK [http://localhost/createBoard?mode=Beginner]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-27 19:05:24) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/homePage.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-27 19:12:36) [GET]
+
+ActionController::RoutingError (No route matches "/minesweeper" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 19:12:47) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 6ms (View: 2 | 200 OK [http://localhost/createBoard?mode=Beginner]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-27 19:12:47) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/homePage.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-27 19:13:06) [GET]
+  Parameters: {"mode"=>"Beginner"}
+
+ActionController::RoutingError (No route matches "/createBoard" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 19:13:12) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 6ms (View: 1 | 200 OK [http://localhost/minesweeper/createBoard?mode=Beginner]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-27 19:13:12) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/homePage.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-27 19:13:16) [GET]
+  Parameters: {"mode"=>"Beginner"}
+
+ActionController::RoutingError (No route matches "/minesweeper/createBoard" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 19:13:21) [GET]
+  Parameters: {"mode"=>"Beginner"}
+Rendering generate_board/new
+Completed in 13ms (View: 2 | 200 OK [http://localhost/mine/createBoard?mode=Beginner]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-27 19:13:21) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/homePage.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 19:13:54) [GET]
+Rendering generate_board/new
+Completed in 5ms (View: 1 | 200 OK [http://localhost/mine]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-27 19:13:54) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/homePage.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 19:19:36) [GET]
+Rendering generate_board/new
+Completed in 15ms (View: 10 | 200 OK [http://localhost/mine]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 20:08:37) [GET]
+Rendering generate_board/new
+Completed in 5ms (View: 0 | 200 OK [http://localhost/mine]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 20:09:32) [GET]
+Rendering generate_board/new
+Completed in 5ms (View: 0 | 200 OK [http://localhost/mine]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 20:09:35) [GET]
+Rendering generate_board/new
+Completed in 5ms (View: 0 | 200 OK [http://localhost/mine]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 20:10:14) [GET]
+Rendering generate_board/new
+Completed in 7ms (View: 2 | 200 OK [http://localhost/mine]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 22:25:10) [GET]
+Rendering generate_board/new
+Completed in 17ms (View: 11 | 200 OK [http://localhost/mine]
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 22:25:25) [GET]
+
+ArgumentError (wrong number of arguments(1 for 0)):
+  app/controllers/generate_board_controller.rb:7:in `initialize'
+  app/controllers/generate_board_controller.rb:7:in `new'
+  app/controllers/generate_board_controller.rb:7:in `new'
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (163.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 22:25:50) [GET]
+
+ArgumentError (wrong number of arguments(1 for 0)):
+  app/controllers/generate_board_controller.rb:7:in `initialize'
+  app/controllers/generate_board_controller.rb:7:in `new'
+  app/controllers/generate_board_controller.rb:7:in `new'
+  <internal:prelude>:8:in `synchronize'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  E:/Program Files/ruby-1.9.1/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (71.0ms)
+Rendered rescues/_request_and_response (22.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GenerateBoardController#new (for 127.0.0.1 at 2010-06-27 22:34:53) [GET]
+Rendering generate_board/new
+Completed in 13ms (View: 3 | 200 OK [http://localhost/mine]

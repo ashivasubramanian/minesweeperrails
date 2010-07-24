@@ -1,0 +1,62 @@
+body
+{
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+.headerTable
+{
+	width: 100%;
+}
+
+.newGameCell
+{
+	text-align:right;
+	width:80%;
+	padding-right: 10px;
+}
+
+.sameModeText
+{
+	font-weight:bold;
+}
+
+.accessKey
+{
+	text-decoration: underline;
+}
+
+#board td
+{
+	text-align:center;
+	background-color: cyan;
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+.field
+{
+	text-align:center;
+	background-color: cyan;
+	border:1px solid black;
+}
+
+.fieldSpacer
+{
+	width:20%;
+}
+
+#usage_div
+{
+	background-color:pink;
+	position:absolute;
+	left: 70%;
+	top: 60%;
+	width:300px;
+	height:200px;
+}
+
+#usage_div span
+{
+	font-weight:bold;
+}

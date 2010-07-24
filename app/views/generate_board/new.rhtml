@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title> Minesweeper </title>
+		<link rel="stylesheet" href="/stylesheets/homePage.css" type="text/css"></link>
+	</head>
+	<body>
+		<table>
+			<!-- header table --> 
+			<table class=headerTable>
+				<tr>
+					<td class=newGameCell>
+						<a href="createBoard?mode=Beginner" title="Click to start a game in the same mode. Access key is n." accesskey=n>
+							New Game <!-- No need to under line the access key. It's already a link. -->
+						</a>
+						<br>
+						<span class=sameModeText>
+							(in same mode)
+						</span>
+					</td>
+					<td>
+						<label accesskey=C for=selectMode>
+							<span class=accessKey>C</span>hange mode:
+						</label>
+						<!--<s:select value="#parameters['mode']" list="#request['modes']" id="selectMode"/>-->
+					</td>
+				</tr>
+			</table>
+			<!-- end of header table -->
+		</table>
+	</body>
+</html>
