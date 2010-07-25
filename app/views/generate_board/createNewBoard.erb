@@ -21,7 +21,14 @@
 						<label accesskey=C for=selectMode>
 							<span class=accessKey>C</span>hange mode:
 						</label>
-						<!--<s:select value="#parameters['mode']" list="#request['modes']" id="selectMode"/>-->
+						<select id="selectMode">
+							<%
+								modes = request.query_parameters[:modes]
+								modes.each {|mode| %>
+								<%= "<option>#{mode}</option>" %>
+								<% } %>
+							%>
+						</select>
 					</td>
 				</tr>
 			</table>
