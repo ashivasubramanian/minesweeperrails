@@ -2,16 +2,24 @@
 	<head>
 		<title> Minesweeper </title>
 		<link rel="stylesheet" href="/stylesheets/homePage.css" type="text/css"></link>
+		<script language="javascript">
+			function changeMode() {
+				alert(document.getElementById("selectMode").value);
+				document.forms[0].action = "/mine/createBoard?mode=" + document.getElementById("selectMode").value;
+				document.forms[0].submit();
+			}
+		</script>
 	</head>
 	<body>
+		<form method="post" action="">
 		<table>
 			<!-- header table --> 
 			<table class=headerTable>
 				<tr>
 					<td class=newGameCell>
-						<a href="createBoard?mode=Beginner" title="Click to start a game in the same mode. Access key is n." accesskey=n>
-							New Game <!-- No need to under line the access key. It's already a link. -->
-						</a>
+						<%= link_to "New Game",
+							url = {:controller => :GenerateBoard, :action => :createNewBoard, :mode => params[:mode]},
+							html_options = {'accesskey' => 'n', 'title' => 'Click to start a game in the same mode. Access key is n.'} %>
 						<br>
 						<span class=sameModeText>
 							(in same mode)
@@ -21,7 +29,7 @@
 						<label accesskey=C for=selectMode>
 							<span class=accessKey>C</span>hange mode:
 						</label>
-						<select id="selectMode">
+						<select id="selectMode" onchange="javascript:changeMode();" value=<%=params[:mode]%>>
 							<%
 								modes = request.query_parameters[:modes]
 								modes.each {|mode| %>
@@ -34,5 +42,10 @@
 			</table>
 			<!-- end of header table -->
 		</table>
+		
+		
+		<!-- Just to satisfy Rails, uff... -->
+		<%= token_tag %>
+		</form>
 	</body>
 </html>

@@ -1,7 +1,7 @@
 class Board
 
 	def initialize(mode)
-		print "in initialize of Board"
+		puts "The mode is #{mode}"
 	end
 
 end

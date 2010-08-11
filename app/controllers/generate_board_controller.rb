@@ -1,10 +1,7 @@
 class GenerateBoardController < ApplicationController
 
 	def createNewBoard
-		print 'woo'
-		mode = request.query_parameters[:mode]
-		print mode
-		board = Board.new(mode)
+		board = Board.new(params[:mode])
 		
 		mode_list = Array.new (3)
 		mode_list[0] = "Beginner"
