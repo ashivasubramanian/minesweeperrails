@@ -4,8 +4,8 @@
 		<link rel="stylesheet" href="/stylesheets/homePage.css" type="text/css"></link>
 		<script language="javascript">
 			function changeMode() {
-				alert(document.getElementById("selectMode").value);
-				document.forms[0].action = "/mine/createBoard?mode=" + document.getElementById("selectMode").value;
+				var mode = document.getElementById("selectMode");
+				document.forms[0].action = "/mine/createBoard?mode=" + mode.options[mode.selectedIndex].text;
 				document.forms[0].submit();
 			}
 		</script>
