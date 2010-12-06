@@ -38,7 +38,56 @@
 			<!-- end of header table -->
 		</table>
 		
-		
+		<!-- game board -->
+		<center>
+			<table width=300 id=board cellspacing=0>
+				<s:iterator value="%{#session.board.rows}" var="singleRow">
+					<tr>
+					<s:iterator value="#singleRow" var="cell">
+						<td>
+							<s:if test="cell.visible == true">
+								<s:property value="cell.tileValue"/>
+							</s:if>
+							<s:else>
+								&nbsp;
+							</s:else>
+						</td>
+					</s:iterator>
+					</tr>
+				</s:iterator>
+			</table>
+
+			<table width=300>
+				<!-- Time counter and mine counter fields -->
+				<tr>
+					<td class=fieldSpacer>&nbsp;</td>
+					<td>Mines:</td>
+					<td class=field>5</td>
+					<td class=fieldSpacer>&nbsp;</td>
+					<td>Time:</td>
+					<td class=field>5</td>
+					<td class=fieldSpacer>&nbsp;</td>
+				</tr>
+				<!-- Time counter and mine counter fields end here -->
+			</table>
+		</center>
+		<!-- end of game board -->
+
+		<div id=usage_div>
+			<h3>Usage</h3>
+			<ul>
+				<li>
+					<span>Select a tile</span> - Mouse over it or use the arrow keys
+				</li>
+				<li>
+					<span>Mark/unmark a tile as suspect</span> - right click on it or Shift + spacebar 
+				</li>
+				<li>
+					<span>Reveal a tile</span> - click on it or press the spacebar.
+				</li>
+			</ul>
+		</div>
+
 		<!-- Just to satisfy Rails, uff... -->
 		<%= token_tag %>
 		</form>
