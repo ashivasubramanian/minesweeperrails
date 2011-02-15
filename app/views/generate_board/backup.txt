@@ -1,0 +1,19 @@
+			<table width=300 id=board cellspacing=0>
+				<%
+					board = request.query_parameters[:board]
+					row_count = board.mode.rows
+					(1..row_count).each do |single_row|
+				%>
+				<tr>
+					<%
+						(1..single_row.length).each do |mine_count|
+					%>
+					<td> <%= mine_count %> </td>
+					<%
+						end
+					%>
+				</tr>
+				<%
+					end
+				%>
+			</table>

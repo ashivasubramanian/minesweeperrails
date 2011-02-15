@@ -28,8 +28,8 @@
 							<%
 								modes = request.query_parameters[:modes]
 								modes.each {|mode| %>
-								<%= "<option>#{mode}</option>" %>
-								<% } %>
+								<option> <%= mode %>  </option>
+								<% }
 							%>
 						</select>
 					</td>
@@ -40,22 +40,6 @@
 		
 		<!-- game board -->
 		<center>
-			<table width=300 id=board cellspacing=0>
-				<s:iterator value="%{#session.board.rows}" var="singleRow">
-					<tr>
-					<s:iterator value="#singleRow" var="cell">
-						<td>
-							<s:if test="cell.visible == true">
-								<s:property value="cell.tileValue"/>
-							</s:if>
-							<s:else>
-								&nbsp;
-							</s:else>
-						</td>
-					</s:iterator>
-					</tr>
-				</s:iterator>
-			</table>
 
 			<table width=300>
 				<!-- Time counter and mine counter fields -->

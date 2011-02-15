@@ -13,6 +13,7 @@ class GenerateBoardController < ApplicationController
 			mode = BoardModes::ADVANCED
 		end
 		board = Board.new(mode)
+		request.query_parameters[:board] = board
 		
 		mode_list = [:Beginner, :Intermediate, :Advanced] 
 		request.query_parameters[:modes] = mode_list
