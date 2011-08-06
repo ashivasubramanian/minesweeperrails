@@ -1,11 +1,11 @@
 require 'Board'
 require 'BoardModes'
 
-class GenerateBoardController < ApplicationController
+class BoardsController < ApplicationController
 
-	def createNewBoard
+	def new 
 		mode = params[:mode]
-		if mode == 'Beginner'
+		if mode.nil? || mode == 'Beginner'
 			mode = BoardModes::BEGINNER
 		elsif mode == 'Intermediate'
 			mode = BoardModes::INTERMEDIATE

@@ -13,7 +13,7 @@
 				<tr>
 					<td class=newGameCell>
 						<%= link_to "New Game",
-							url = {:controller => :GenerateBoard, :action => :createNewBoard, :mode => params[:mode]},
+							url = new_board_url(:mode => params[:mode]),
 							html_options = {'accesskey' => 'n', 'title' => 'Click to start a game in the same mode. Access key is n.'} %>
 						<br>
 						<span class=sameModeText>
