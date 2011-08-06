@@ -1,12 +1,9 @@
 <html>
 	<head>
 		<title> Minesweeper </title>
-		<link rel="stylesheet" href="/stylesheets/homePage.css" type="text/css"></link>
-		<script src="/javascripts/jquery-1.3.2.min.js"></script>
-		<script src="/javascripts/homePage.js"></script>
 	</head>
 	<body>
-		<form method="post" action="">
+		<%= form_tag do %>
 		<table>
 			<!-- header table --> 
 			<table class=headerTable>
@@ -24,14 +21,7 @@
 						<label accesskey=C for=selectMode>
 							<span class=accessKey>C</span>hange mode:
 						</label>
-						<select id="selectMode" value=<%=params[:mode]%>>
-							<%
-								modes = request.query_parameters[:modes]
-								modes.each {|mode| %>
-								<option> <%= mode %>  </option>
-								<% }
-							%>
-						</select>
+						<%= select_tag(:mode, options_from_collection_for_select(request.query_parameters[:modes], :to_s, :to_s)) %>
 					</td>
 				</tr>
 			</table>
@@ -93,9 +83,7 @@
 				</li>
 			</ul>
 		</div>
-
-		<!-- Just to satisfy Rails, uff... -->
-		<%= token_tag %>
-		</form>
+		<% end %>
+		<!--</form>-->
 	</body>
 </html>
