@@ -55,7 +55,7 @@ class BoardsControllerTest < ActionController::TestCase
 	test "it should have mnemonics" do
 		get :new
 		assert_select 'a[href=/boards/new][accesskey=n]'
-		assert_select 'select[accesskey=c]'
+		assert_select 'label[for=selectMode][accesskey=C]'
 	end
 
 end
