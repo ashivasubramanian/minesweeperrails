@@ -1,4 +1,4 @@
-require 'BoardModes'
+require 'board_modes'
 
 class Board
 

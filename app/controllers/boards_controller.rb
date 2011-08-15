@@ -1,5 +1,5 @@
-require 'Board'
-require 'BoardModes'
+require 'board'
+require 'board_modes'
 
 class BoardsController < ApplicationController
 
