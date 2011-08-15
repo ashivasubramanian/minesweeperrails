@@ -6,38 +6,37 @@ class BoardsControllerTest < ActionController::TestCase
 		assert_response :success
 	end
 
-	test "should set mode to Beginner if no mode is present" do
+	test "should generate board in Beginner mode if no mode is present" do
 		response = get :new
-		mode = response.request.query_parameters[:board].mode
-		assert_equal BoardModes::BEGINNER, mode 
+		assert_select "option[value=Beginner][selected]"
 	end
 
 	test "should set mode to requested mode" do
-		response = get :new, {:mode => "Intermediate"}
-		mode = response.request.query_parameters[:board].mode
-		assert_equal BoardModes::INTERMEDIATE, mode
+		response = get :new, :board => {:mode_name => "Intermediate"}
+		assert_select "option[value=Intermediate][selected]"
 	end
 
 	test "it should contain a New Game link" do
 		get :new
 		assert_select "a", "New Game"
+		assert_select "a[href*=#{new_board_path}]"
 	end
 
 	test "it should contain a New Game link with the URL pointing to the current mode" do
 		get :new
-		assert_select 'a[href=/boards/new]'
+		assert_select 'a[href*=Beginner]'
 
-		get :new, :mode => 'Intermediate'
-		assert_select 'a[href=/boards/new?mode=Intermediate]'
+		get :new, :board => {:mode_name => 'Intermediate'}
+		assert_select 'a[href*=Intermediate]'
 
-		get :new, :mode => 'Advanced'
-		assert_select 'a[href=/boards/new?mode=Advanced]'
+		get :new, :board => {:mode_name => 'Advanced'}
+		assert_select 'a[href*=Advanced]'
 	end
 
 	test "it should have a text '(in same mode)' below the New Game link" do
 		get :new
 		assert_select 'td[class=newGameCell]' do # testing span is below New Game Link
-			assert_select 'a[href=/boards/new]'
+			assert_select "a[href*=#{new_board_path}]"
 			assert_select 'br'
 			assert_select 'span[class=sameModeText]'
 		end
@@ -54,8 +53,7 @@ class BoardsControllerTest < ActionController::TestCase
 
 	test "it should have mnemonics" do
 		get :new
-		assert_select 'a[href=/boards/new][accesskey=n]'
+		assert_select "a[href*=#{new_board_path}][accesskey=n]"
 		assert_select 'label[for=selectMode][accesskey=C]'
 	end
-
 end

@@ -3,14 +3,14 @@
 		<title> Minesweeper </title>
 	</head>
 	<body>
-		<%= form_tag do %>
+		<%= form_for :board do |form| %>
 		<table>
 			<!-- header table --> 
 			<table class=headerTable>
 				<tr>
 					<td class=newGameCell>
 						<%= link_to "New Game",
-							url = new_board_path(:mode => params[:mode]),
+							url = new_board_url("board[mode_name]" => @board.mode_name),
 							html_options = {'accesskey' => 'n', 'title' => 'Click to start a game in the same mode. Access key is n.'} %>
 						<br>
 						<span class=sameModeText>
@@ -21,7 +21,7 @@
 						<label accesskey=C for=selectMode>
 							<span class=accessKey>C</span>hange mode:
 						</label>
-						<%= select_tag(:mode, options_from_collection_for_select(request.query_parameters[:modes], :to_s, :to_s)) %>
+						<%= form.select(:mode_name, request.query_parameters[:modes]) %>
 					</td>
 				</tr>
 			</table>
@@ -31,9 +31,8 @@
 		<center>	
 			<table width=300 id=board cellspacing=0>
 				<%
-					board = request.query_parameters[:board]
-					row_count = board.mode.rows
-					column_count = board.mode.columns
+					row_count = @board.mode.rows
+					column_count = @board.mode.columns
 					(1..row_count).each do |single_row|
 				%>
 				<tr>
@@ -84,6 +83,5 @@
 			</ul>
 		</div>
 		<% end %>
-		<!--</form>-->
 	</body>
 </html>

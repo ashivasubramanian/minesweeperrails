@@ -6,15 +6,10 @@ var column = 0;
 var mouseOverControl;
 
 function doEventBinding() {
-	// $("#board td").bind("click", reveal);
-	// $("#board td").bind("mouseover", highlight);
-	// $("#board td").bind("mouseout", unhighlight);
-	// $(document).bind("keydown", determineAction);
-	$("#mode").bind("change", changeMode); 
+	$("#board_mode_name").bind("change", changeMode); 
 }
 
 function reveal() {
-	alert(1);
 	result = $.getJSON("http://localhost:8080/mine/getMineCount", {"row":row, "column":column}, revealCell);
 }	
 
