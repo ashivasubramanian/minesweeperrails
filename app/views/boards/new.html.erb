@@ -31,15 +31,15 @@
 		<center>	
 			<table width=300 id=board cellspacing=0>
 				<%
-					row_count = @board.mode.rows
-					column_count = @board.mode.columns
-					(1..row_count).each do |single_row|
+					row_count = @board.mode.rows - 1
+					column_count = @board.mode.columns - 1
+					(0..row_count).each do |row_index|
 				%>
 				<tr>
 					<%
-						(1..column_count).each do |mine_count|
+						(0..column_count).each do |column_index|
 					%>
-					<td> <%= mine_count %> </td>
+					<td> <%= @board.cells[row_index][column_index] %> </td>
 					<%
 						end
 					%>
