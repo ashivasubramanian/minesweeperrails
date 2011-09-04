@@ -1,5 +1,6 @@
 require 'test/unit'
 require 'test_helper'
+require 'board_builder'
 
 class BoardTest < Test::Unit::TestCase
 
@@ -37,15 +38,7 @@ class BoardTest < Test::Unit::TestCase
 	end
 
 	def test_should_calculate_mine_count_for_central_tile
-		board = Board.new(BoardModes::BEGINNER)
-		board.cells = [
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, -1, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil]
-					  ]
-		board.send(:fill_non_mine_cells_with_numbers)
+		board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(2, 4).build()
 
 		assert_equal 1, board.cells[1][3]
 		assert_equal 1, board.cells[1][4]
@@ -58,15 +51,7 @@ class BoardTest < Test::Unit::TestCase
 	end
 
 	def test_should_calculate_mine_count_for_top_left_tile
-		board = Board.new(BoardModes::BEGINNER)
-		board.cells = [
-						[-1, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil]
-					  ]
-		board.send(:fill_non_mine_cells_with_numbers)
+		board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(0, 0).build()
 
 		assert_equal 1, board.cells[0][1]
 		assert_equal 1, board.cells[1][0]
@@ -74,15 +59,7 @@ class BoardTest < Test::Unit::TestCase
 	end
 
 	def test_should_calculate_mine_count_for_top_right_tile
-		board = Board.new(BoardModes::BEGINNER)
-		board.cells = [
-						[nil, nil, nil, nil, nil, nil, nil, nil, -1], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil]
-					  ]
-		board.send(:fill_non_mine_cells_with_numbers)
+		board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(0, 8).build()
 
 		assert_equal 1, board.cells[0][7]
 		assert_equal 1, board.cells[1][7]
@@ -90,15 +67,7 @@ class BoardTest < Test::Unit::TestCase
 	end
 
 	def test_should_calculate_mine_count_for_bottom_left_tile
-		board = Board.new(BoardModes::BEGINNER)
-		board.cells = [
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[-1, nil, nil, nil, nil, nil, nil, nil, nil]
-					  ]
-		board.send(:fill_non_mine_cells_with_numbers)
+		board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(8, 0).build()
 
 		assert_equal 1, board.cells[8][1]
 		assert_equal 1, board.cells[7][0]
@@ -106,15 +75,7 @@ class BoardTest < Test::Unit::TestCase
 	end
 
 	def test_should_calculate_mine_count_for_bottom_right_tile
-		board = Board.new(BoardModes::BEGINNER)
-		board.cells = [
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, nil], [nil, nil, nil, nil, nil, nil, nil, nil, nil],
-						[nil, nil, nil, nil, nil, nil, nil, nil, -1]
-					  ]
-		board.send(:fill_non_mine_cells_with_numbers)
+		board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(8, 8).build()
 
 		assert_equal 1, board.cells[8][7]
 		assert_equal 1, board.cells[7][7]
