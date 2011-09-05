@@ -2,7 +2,7 @@ class BoardBuilder
 
 	def initialize(mode)
 		@board = Board.new(mode)
-		@board.cells = [].fill(nil, @board.mode.rows) {|index| [].fill(nil, nil, @board.mode.columns)}
+		@board.cells = Array.new(@board.mode.rows) {|index| Array.new @board.mode.columns}
 	end
 
 	def with_mine_in(row, column)

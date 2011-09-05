@@ -7,7 +7,7 @@ class Board
 	def initialize(mode)
 		@mode = mode
 		@mode_name = mode.name
-		@cells = [].fill(nil, @mode.rows) {|index| [].fill(nil, nil, @mode.columns)}
+		@cells = Array.new(@mode.rows) {|index| Array.new @mode.columns}
 		fill_required_cells_with_mines
 		fill_non_mine_cells_with_numbers
 	end
