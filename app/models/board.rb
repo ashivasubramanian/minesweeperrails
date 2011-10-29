@@ -1,4 +1,5 @@
 require 'board_modes'
+require 'cell'
 
 class Board
 
@@ -19,7 +20,7 @@ class Board
 			row = rand(@mode.rows)
 			column = rand(@mode.columns)
 			unless (@cells[row][column])
-				@cells[row][column] = -1
+				@cells[row][column] = Cell.new(-1)
 				mine_count += 1
 			end
 		end
@@ -28,7 +29,9 @@ class Board
 	def fill_non_mine_cells_with_numbers
 		@mode.rows.times do |row|
 			@mode.columns.times do |column|
-				@cells[row][column] = calculate_mine_count_around_cell(row, column) unless @cells[row][column] == -1
+				unless @cells[row][column] && @cells[row][column].mine_count == -1
+					@cells[row][column] = calculate_mine_count_around_cell(row, column)
+				end
 			end
 		end
 	end
@@ -38,33 +41,33 @@ class Board
 		row_index = @mode.rows - 1
 		column_index = @mode.columns - 1
 		if column > 0
-			mine_count += 1 if @cells[row][column - 1] && @cells[row][column - 1] == -1
+			mine_count += 1 if @cells[row][column - 1] && @cells[row][column - 1].mine_count == -1
 		end
 		if column < column_index
-			mine_count += 1 if @cells[row][column + 1] && @cells[row][column + 1] == -1
+			mine_count += 1 if @cells[row][column + 1] && @cells[row][column + 1].mine_count == -1
 		end
 		
 		if row > 0
 			if column > 0
-				mine_count += 1 if @cells[row - 1][column - 1] && @cells[row - 1][column - 1] == -1
+				mine_count += 1 if @cells[row - 1][column - 1] && @cells[row - 1][column - 1].mine_count == -1
 			end
-			mine_count += 1 if @cells[row - 1][column] && @cells[row - 1][column] == -1
+			mine_count += 1 if @cells[row - 1][column] && @cells[row - 1][column].mine_count == -1
 			if column < column_index
-				mine_count += 1 if @cells[row - 1][column + 1] && @cells[row - 1][column + 1] == -1
+				mine_count += 1 if @cells[row - 1][column + 1] && @cells[row - 1][column + 1].mine_count == -1
 			end
 		end
 
 		if row < row_index
 			if column > 0
-				mine_count += 1 if @cells[row + 1][column - 1] && @cells[row + 1][column - 1] == -1
+				mine_count += 1 if @cells[row + 1][column - 1] && @cells[row + 1][column - 1].mine_count == -1
 			end
-			mine_count += 1 if @cells[row + 1][column] && @cells[row + 1][column] == -1
+			mine_count += 1 if @cells[row + 1][column] && @cells[row + 1][column].mine_count == -1
 			if column < column_index
-				mine_count += 1 if @cells[row + 1][column + 1] && @cells[row + 1][column + 1] == -1
+				mine_count += 1 if @cells[row + 1][column + 1] && @cells[row + 1][column + 1].mine_count == -1
 			end
 		end
 
-		mine_count
+		Cell.new(mine_count)
 	end
 
 end
