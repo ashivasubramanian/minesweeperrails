@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'board_builder'
 
 class BoardsControllerTest < ActionController::TestCase
 	test "should be successful" do
@@ -12,8 +13,18 @@ class BoardsControllerTest < ActionController::TestCase
 	end
 
 	test "should set mode to requested mode" do
-		response = get :new, :board => {:mode_name => "Intermediate"}
+		response = get :new, :board => {:mode_name => 'Intermediate'}
 		assert_select "option[value=Intermediate][selected]"
+	end
+
+	test "should set board into session" do
+		mock_board = BoardBuilder.new(BoardModes::BEGINNER).build
+		Board.expects(:new).with(BoardModes::BEGINNER).returns(mock_board)
+
+		get :new
+
+		assert_equal mock_board, session[@request.session_options[:id]], 'Board not set into session.'
+		Board.unstub(:new)
 	end
 
 	test "it should contain a New Game link" do
@@ -56,4 +67,15 @@ class BoardsControllerTest < ActionController::TestCase
 		assert_select "a[href*=#{new_board_path}][accesskey=n]"
 		assert_select 'label[for=selectMode][accesskey=C]'
 	end
+
+	#test "it should not render mine count when the board is first loaded" do
+	# 	get :new
+	# 	assert_select "#board td", count: 81
+	# 	assert_select "#board td", "&nbsp;"
+	#end
+
+	# test "it should render mine count when the user clicks on the cell" do
+	# 	get :reveal, :row => 2, :column => 2
+	# end
+
 end

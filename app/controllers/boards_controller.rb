@@ -13,9 +13,20 @@ class BoardsController < ApplicationController
 			mode = BoardModes::ADVANCED
 		end
 		@board = Board.new(mode)
+		session[request.session_options[:id]] = @board
 		
 		mode_list = [BoardModes::BEGINNER.name, BoardModes::INTERMEDIATE.name, BoardModes::ADVANCED.name] 
 		request.query_parameters[:modes] = mode_list
+	end
+
+	def reveal
+		board = session[request.session_options[:id]]
+		board.cells.each do |row|
+			row.each do |column|
+				print column.mine_count
+			end
+			p ""
+		end	
 	end
 
 end

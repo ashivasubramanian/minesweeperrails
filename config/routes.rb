@@ -54,6 +54,10 @@ Mine::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
-   resources :boards,  :only => [:new]
+   resources :boards,  :only => [:new] do
+    collection do
+      get 'reveal'
+    end
+   end
    root :to => "boards#new"
 end
