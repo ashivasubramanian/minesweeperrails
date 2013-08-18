@@ -3,6 +3,8 @@ require 'board_modes'
 
 class BoardsController < ApplicationController
 
+	respond_to :html, :json
+
 	def new 
 		mode = params[:board][:mode_name] if params[:board]
 		if mode.nil? || mode == 'Beginner'
@@ -30,13 +32,12 @@ class BoardsController < ApplicationController
 	end
 
 	def reveal
+		row = params[:row].to_i
+		column = params[:column].to_i	
+
 		board = session[request.session_options[:id]]
-		board.cells.each do |row|
-			row.each do |column|
-				print column.mine_count
-			end
-			p ""
-		end	
+		cell = board.cells[row][column]
+		respond_with cell
 	end
 
 end

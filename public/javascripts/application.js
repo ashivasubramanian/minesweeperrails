@@ -7,14 +7,18 @@ var mouseOverControl;
 
 function doEventBinding() {
 	$("#board_mode_name").bind("change", changeMode); 
+	$("#board td").bind("click", reveal);
+	$("#board td").bind("mouseover", highlight);
+	$("#board td").bind("mouseout", unhighlight);
 }
 
 function reveal() {
-	result = $.getJSON("http://localhost:8080/mine/getMineCount", {"row":row, "column":column}, revealCell);
+	result = $.getJSON(reveal_boards_path, {"row":row, "column":column}, revealCell);
 }	
 
 function highlight() {
 	mouseOverControl = this;
+	findRowAndColumnValues();
 	highlightCell(this);
 }
 
@@ -22,9 +26,9 @@ function unhighlight() {
 	unhighlightCell(this);
 }
 
-function revealCell(jsonData, control) {
-	alert(jsonData);
-	$(control).css("background-color", "white");
+function revealCell(data) {
+	$(mouseOverControl).text(data.mine_count);
+	$(mouseOverControl).css("background-color", "white");
 }
 
 function highlightCell(control) {
@@ -73,6 +77,21 @@ function determineAction(event) {
 	mouseOverControl = document.getElementById("board").rows[row].cells[column];
 }
 
+function findRowAndColumnValues() {
+	if (mouseOverControl != undefined) {
+		for (i = 0; i < document.getElementById("board").rows.length; i++) {
+			var single_row = document.getElementById("board").rows[i];
+			for (j = 0 ; j < single_row.cells.length; j++) {
+				var single_cell = single_row.cells[j];
+				if (single_cell == mouseOverControl) {
+					row = i;
+					column = j;
+					break;
+				}
+			}
+		}
+	}
+}
 
 function changeMode() {
 	document.forms[0].method = 'get';

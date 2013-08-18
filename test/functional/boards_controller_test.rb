@@ -68,14 +68,32 @@ class BoardsControllerTest < ActionController::TestCase
 		assert_select 'label[for=selectMode][accesskey=C]'
 	end
 
-	#test "it should not render mine count when the board is first loaded" do
-	# 	get :new
-	# 	assert_select "#board td", count: 81
-	# 	assert_select "#board td", "&nbsp;"
-	#end
+	test "it should not render mine count when the board is first loaded" do
+	 	get :new
+	 	assert_select "#board td", count: 81
+	 	assert_select "#board td", "&nbsp;"
+	end
 
-	# test "it should render mine count when the user clicks on the cell" do
-	# 	get :reveal, :row => 2, :column => 2
-	# end
+	test "it should render mine count JSON when the user clicks on a mine cell" do
+		mock_board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(2, 2).build
+		Board.expects(:new).with(BoardModes::BEGINNER).returns(mock_board)
+		get :new
+
+	 	response = get :reveal, :row => 2, :column => 2, :format => :json
+		assert_equal '{"mine_count":-1}', response.body
+
+		Board.unstub(:new)
+	end
+
+	test "it should render mine count JSON when the user clicks on a non-mine cell" do
+		mock_board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(2, 2).build
+		Board.expects(:new).with(BoardModes::BEGINNER).returns(mock_board)
+		get :new
+
+		response = get :reveal, :row => 2, :column => 1, :format => :json
+		assert_equal '{"mine_count":1}', response.body
+
+		Board.unstub(:new)
+	end
 
 end
