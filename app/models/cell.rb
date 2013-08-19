@@ -7,9 +7,9 @@ class Cell
 	end
 
 	def colour
-		return "green" if mine_count == 1 or mine_count == 2
-		return "orange" if mine_count == 3
-		return "red" if mine_count >= 4
+		return 'green' if mine_count == 1 or mine_count == 2
+		return 'orange' if mine_count == 3
+		return 'red' if mine_count >= 4
 	end
 
 	def as_json(options = {})
