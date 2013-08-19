@@ -80,7 +80,7 @@ class BoardsControllerTest < ActionController::TestCase
 		get :new
 
 	 	response = get :reveal, :row => 2, :column => 2, :format => :json
-		assert_equal '{"mine_count":-1}', response.body
+		assert_equal '{"mine_count":"-1","cell_colour":null}', response.body
 
 		Board.unstub(:new)
 	end
@@ -91,7 +91,7 @@ class BoardsControllerTest < ActionController::TestCase
 		get :new
 
 		response = get :reveal, :row => 2, :column => 1, :format => :json
-		assert_equal '{"mine_count":1}', response.body
+		assert_equal '{"mine_count":"1","cell_colour":"green"}', response.body
 
 		Board.unstub(:new)
 	end
