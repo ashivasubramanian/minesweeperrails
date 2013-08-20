@@ -13,7 +13,8 @@ class Cell
 	end
 
 	def as_json(options = {})
+		mine_count = (@mine_count == 0) ? '' : @mine_count
 		cell_colour = colour()
-		{ :mine_count => @mine_count, :cell_colour => cell_colour }
+		{ :mine_count => mine_count.to_s, :cell_colour => cell_colour }
 	end
 end

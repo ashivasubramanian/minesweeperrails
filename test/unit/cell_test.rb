@@ -47,4 +47,18 @@ class CellTest < Test::Unit::TestCase
 		cell = board.cells[0][0]
 		assert_nil cell.colour
 	end
+
+	def test_mine_count_in_json_should_be_empty_string_if_mine_count_is_0
+		board = BoardBuilder.new(BoardModes::BEGINNER).build()
+
+		cell = board.cells[0][0]
+		assert_equal '{"mine_count":"","cell_colour":null}', cell.to_json
+	end
+
+	def test_mine_count_in_json_should_not_be_empty_string_if_mine_count_is_not_0
+		board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(0, 0).build()
+
+		cell = board.cells[0][1]
+		assert_equal '{"mine_count":"1","cell_colour":"green"}', cell.to_json
+	end
 end
