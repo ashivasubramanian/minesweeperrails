@@ -10,6 +10,7 @@ function doEventBinding() {
 	$("#board td").bind("click", reveal);
 	$("#board td").bind("mouseover", highlight);
 	$("#board td").bind("mouseout", unhighlight);
+	$(document).bind("keydown", determineAction);
 }
 
 function reveal() {
@@ -57,7 +58,7 @@ function determineAction(event) {
 		}
 	}
 	if (event.keyCode == 32) { //space
-		revealCell(document.getElementById("board").rows[row].cells[column]);
+		reveal();
 	} else if (event.keyCode == 37) { //Left arrow
 		unhighlightCell(document.getElementById("board").rows[row].cells[column]);
 		column--;
