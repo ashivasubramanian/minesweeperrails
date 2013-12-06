@@ -28,7 +28,13 @@ function unhighlight() {
 }
 
 function revealCell(data) {
-	$(mouseOverControl).text(data.cell.mine_count);
+	mine_count = data.cell.mine_count;
+	if (mine_count == -1)
+	{
+		alert("You clicked on a mine!! GAME OVER!!");
+		return;
+	}
+	$(mouseOverControl).text(mine_count);
 	$(mouseOverControl).css("color", data.cell.cell_colour);
 	$(mouseOverControl).css("background-color", "white");
 }
