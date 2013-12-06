@@ -3,36 +3,37 @@
 		<title> Minesweeper </title>
 	</head>
 	<body>
-		<%= form_for :board do |form| %>
-		<table>
-			<!-- header table --> 
-			<table class=headerTable>
-				<tr>
-					<td class=newGameCell>
-						<%= link_to "New Game",
-							url = new_board_url("board[mode_name]" => @board.mode_name),
-							html_options = {'accesskey' => 'n', 'title' => 'Click to start a game in the same mode. Access key is n.'} %>
-						<br>
-						<span class=sameModeText>
-							(in same mode)
-						</span>
-					</td>
-					<td>
-						<label accesskey=C for=selectMode>
-							<span class=accessKey>C</span>hange mode:
-						</label>
-						<%= form.select(:mode_name, request.query_parameters[:modes]) %>
-					</td>
-				</tr>
+		<%= form_tag do %>
+			<table>
+				<!-- header table --> 
+				<table class=headerTable>
+					<tr>
+						<td class=newGameCell>
+							<%= link_to "New Game",
+								url = new_game_url("board[mode_name]" => @game.board.mode_name),
+								html_options = {'accesskey' => 'n', 'title' => 'Click to start a game in the same mode. Access key is n.'} %>
+							<br>
+							<span class=sameModeText>
+								(in same mode)
+							</span>
+						</td>
+						<td>
+							<label accesskey=C for=selectMode>
+								<span class=accessKey>C</span>hange mode:
+							</label>
+							<%= select_tag("board[mode_name]", options_for_select(request.query_parameters[:modes], @game.board.mode.name)) %>
+						</td>
+					</tr>
+				</table>
+				<!-- end of header table -->
 			</table>
-			<!-- end of header table -->
-		</table>
+		<% end %>
 
 		<center>	
 			<table width=300 id=board cellspacing=0>
 				<%
-					row_count = @board.mode.rows - 1
-					column_count = @board.mode.columns - 1
+					row_count = @game.board.mode.rows - 1
+					column_count = @game.board.mode.columns - 1
 					(0..row_count).each do |row_index|
 				%>
 				<tr>
@@ -82,6 +83,5 @@
 				</li>
 			</ul>
 		</div>
-		<% end %>
 	</body>
 </html>

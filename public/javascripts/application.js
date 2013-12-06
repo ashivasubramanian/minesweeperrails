@@ -14,7 +14,7 @@ function doEventBinding() {
 }
 
 function reveal() {
-	result = $.getJSON(reveal_boards_path, {"row":row, "column":column}, revealCell);
+	result = $.getJSON(reveal_games_path, {"row":row, "column":column}, revealCell);
 }	
 
 function highlight() {
@@ -28,8 +28,8 @@ function unhighlight() {
 }
 
 function revealCell(data) {
-	$(mouseOverControl).text(data.mine_count);
-	$(mouseOverControl).css("color", data.cell_colour);
+	$(mouseOverControl).text(data.cell.mine_count);
+	$(mouseOverControl).css("color", data.cell.cell_colour);
 	$(mouseOverControl).css("background-color", "white");
 }
 
@@ -97,6 +97,6 @@ function findRowAndColumnValues() {
 
 function changeMode() {
 	document.forms[0].method = 'get';
-	document.forms[0].action = new_board_path + "?mode=" + this.value;
+	document.forms[0].action = new_game_path + "?mode=" + this.value;
 	document.forms[0].submit();
 }

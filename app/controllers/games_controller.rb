@@ -1,7 +1,7 @@
 require 'board'
 require 'board_modes'
 
-class BoardsController < ApplicationController
+class GamesController < ApplicationController
 
 	respond_to :html, :json
 
@@ -14,11 +14,11 @@ class BoardsController < ApplicationController
 		elsif mode == 'Advanced'
 			mode = BoardModes::ADVANCED
 		end
-		@board = Board.new(mode)
-		session[request.session_options[:id]] = @board
+		@game = Game.new(mode)
+		session[request.session_options[:id]] = @game
 		
 		board_as_string = ''
-		@board.cells.each do |row|
+		@game.board.cells.each do |row|
 			row.each do |column|
 				board_as_string += column.mine_count.to_s + ' '
 			end
@@ -35,9 +35,8 @@ class BoardsController < ApplicationController
 		row = params[:row].to_i
 		column = params[:column].to_i	
 
-		board = session[request.session_options[:id]]
-		cell = board.cells[row][column]
-		respond_with cell
+		game = session[request.session_options[:id]]
+		respond_with game.reveal_cell(row, column)
 	end
 
 end
