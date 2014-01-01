@@ -13,6 +13,17 @@ class Board
 		fill_non_mine_cells_with_numbers
 	end
 
+	def to_s
+		board_as_string = ''
+		@cells.each do |row|
+			row.each do |column|
+				board_as_string += column.mine_count.to_s + ' '
+			end
+			board_as_string += "\n"
+		end	
+		board_as_string
+	end
+
 	private
 	def fill_required_cells_with_mines
 		mine_count = 0

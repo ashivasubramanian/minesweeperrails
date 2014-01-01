@@ -82,4 +82,15 @@ class BoardTest < Test::Unit::TestCase
 		assert_equal 1, board.cells[7][8].mine_count
 	end
 
+	def test_should_print_board_status
+		board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(8, 8).build()
+		expected_string = "0 0 0 0 0 0 0 0 0 \n" * (board.mode.rows - 2)
+		expected_string += "0 0 0 0 0 0 0 1 1 \n"
+		expected_string += "0 0 0 0 0 0 0 1 -1 \n"
+
+		actual_string = board.to_s
+
+		assert_equal expected_string, actual_string
+	end
+
 end
