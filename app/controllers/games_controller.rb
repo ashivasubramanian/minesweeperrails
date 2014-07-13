@@ -15,6 +15,7 @@ class GamesController < ApplicationController
 			mode = BoardModes::ADVANCED
 		end
 		@game = Game.new(mode)
+		session[request.session_options[:id]] = :dummy
 		session[request.session_options[:id]] = @game
 		
 		logger.info "Board generated for request id #{request.session_options[:id]} is: \n#{@game.board}"
@@ -27,7 +28,8 @@ class GamesController < ApplicationController
 		row = params[:row].to_i
 		column = params[:column].to_i	
 
-		game = session[request.session_options[:id]]
+		session_id_from_cookie = request.session_options[:id]
+		game = session[session_id_from_cookie]
 		respond_with game.reveal_cell(row, column)
 	end
 
