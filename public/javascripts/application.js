@@ -32,7 +32,8 @@ function revealCell(data) {
 	if (mine_count == -1)
 	{
 		alert("You clicked on a mine!! GAME OVER!!");
-		return;
+		$($('form')[0]).attr('method', 'get');
+		$($('form')[0]).submit();
 	}
 	$(mouseOverControl).text(mine_count);
 	$(mouseOverControl).css("color", data.cell.cell_colour);
