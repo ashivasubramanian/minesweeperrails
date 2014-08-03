@@ -3,7 +3,6 @@
 		<title> Minesweeper </title>
 	</head>
 	<body>
-		<%= form_tag do %>
 			<table>
 				<!-- header table --> 
 				<table class=headerTable>
@@ -18,16 +17,17 @@
 							</span>
 						</td>
 						<td>
-							<label accesskey=C for=selectMode>
-								<span class=accessKey>C</span>hange mode:
-							</label>
-							<%= select_tag("board[mode_name]", options_for_select(request.query_parameters[:modes], @game.board.mode.name)) %>
+							<%= form_tag do %>
+								<label accesskey=C for=selectMode>
+									<span class=accessKey>C</span>hange mode:
+								</label>
+								<%= select_tag("board[mode_name]", options_for_select(request.query_parameters[:modes], @game.board.mode.name)) %>
+							<% end %>
 						</td>
 					</tr>
 				</table>
 				<!-- end of header table -->
 			</table>
-		<% end %>
 
 		<center>	
 			<table width=300 id=board cellspacing=0>
