@@ -41,7 +41,7 @@ function revealCell(data) {
 }
 
 function highlightCell(control) {
-	var current_control = document.getElementById("board").rows[row].cells[column];
+	var current_control = $("#board")[0].rows[row].cells[column];
 	unhighlightCell(current_control);
 	$(control).css("border", "1px white solid");
 }
@@ -51,9 +51,10 @@ function unhighlightCell(control) {
 }
 
 function determineAction(event) {
+	board = $('#board')[0];
 	if (mouseOverControl != undefined) {
-		for (i = 0; i < document.getElementById("board").rows.length; i++) {
-			var single_row = document.getElementById("board").rows[i];
+		for (i = 0; i < board.rows.length; i++) {
+			var single_row = board.rows[i];
 			for (j = 0 ; j < single_row.cells.length; j++) {
 				var single_cell = single_row.cells[j];
 				if (single_cell == mouseOverControl) {
@@ -67,29 +68,29 @@ function determineAction(event) {
 	if (event.keyCode == 32) { //space
 		reveal();
 	} else if (event.keyCode == 37) { //Left arrow
-		unhighlightCell(document.getElementById("board").rows[row].cells[column]);
+		unhighlightCell(board.rows[row].cells[column]);
 		column--;
-		highlightCell(document.getElementById("board").rows[row].cells[column]);
+		highlightCell(board.rows[row].cells[column]);
 	} else if (event.keyCode == 39) { // Right arrow
-		unhighlightCell(document.getElementById("board").rows[row].cells[column]);
+		unhighlightCell(board.rows[row].cells[column]);
 		column++;
-		highlightCell(document.getElementById("board").rows[row].cells[column]);
+		highlightCell(board.rows[row].cells[column]);
 	} else if (event.keyCode == 38) { // Up arrow
-		unhighlightCell(document.getElementById("board").rows[row].cells[column]);
+		unhighlightCell(board.rows[row].cells[column]);
 		row--;
-		highlightCell(document.getElementById("board").rows[row].cells[column]);
+		highlightCell(board.rows[row].cells[column]);
 	} else if (event.keyCode == 40) { //Down arrow
-		unhighlightCell(document.getElementById("board").rows[row].cells[column]);
+		unhighlightCell(board.rows[row].cells[column]);
 		row++;
-		highlightCell(document.getElementById("board").rows[row].cells[column]);
+		highlightCell(board.rows[row].cells[column]);
 	}
-	mouseOverControl = document.getElementById("board").rows[row].cells[column];
+	mouseOverControl = board.rows[row].cells[column];
 }
 
 function findRowAndColumnValues() {
 	if (mouseOverControl != undefined) {
-		for (i = 0; i < document.getElementById("board").rows.length; i++) {
-			var single_row = document.getElementById("board").rows[i];
+		for (i = 0; i < $("#board")[0].rows.length; i++) {
+			var single_row = $("#board")[0].rows[i];
 			for (j = 0 ; j < single_row.cells.length; j++) {
 				var single_cell = single_row.cells[j];
 				if (single_cell == mouseOverControl) {
@@ -103,7 +104,7 @@ function findRowAndColumnValues() {
 }
 
 function changeMode() {
-	document.forms[0].method = 'get';
-	document.forms[0].action = new_game_path + "?mode=" + this.value;
-	document.forms[0].submit();
+	$($('form')[0]).attr('method', 'get');
+	$($('form')[0]).attr('action', new_game_path + "?mode=" + this.value);
+	$($('form')[0]).submit();
 }
