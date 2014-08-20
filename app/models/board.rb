@@ -48,7 +48,7 @@ class Board
 	end
 
 	def calculate_mine_count_around_cell(row, column)
-		mine_count = surrounding_cells(row, column).select {|cell| cell.mine_count == -1}.count
+		mine_count = surrounding_cells(row, column).count{|cell| cell.mine_count == -1}
 		Cell.new(mine_count)
 	end
 
