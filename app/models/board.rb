@@ -48,37 +48,40 @@ class Board
 	end
 
 	def calculate_mine_count_around_cell(row, column)
-		mine_count = 0
+		mine_count = surrounding_cells(row, column).select {|cell| cell.mine_count == -1}.count
+		Cell.new(mine_count)
+	end
+
+	def surrounding_cells(row, column)
+		surrounding_cells = []
 		row_index = @mode.rows - 1
 		column_index = @mode.columns - 1
 		if column > 0
-			mine_count += 1 if @cells[row][column - 1] && @cells[row][column - 1].mine_count == -1
+			surrounding_cells << @cells[row][column - 1] if @cells[row][column - 1]
 		end
 		if column < column_index
-			mine_count += 1 if @cells[row][column + 1] && @cells[row][column + 1].mine_count == -1
+			surrounding_cells << @cells[row][column + 1] if @cells[row][column + 1]
 		end
 		
 		if row > 0
 			if column > 0
-				mine_count += 1 if @cells[row - 1][column - 1] && @cells[row - 1][column - 1].mine_count == -1
+				surrounding_cells << @cells[row - 1][column - 1] if @cells[row - 1][column - 1]
 			end
-			mine_count += 1 if @cells[row - 1][column] && @cells[row - 1][column].mine_count == -1
+			surrounding_cells << @cells[row - 1][column] if @cells[row - 1][column]
 			if column < column_index
-				mine_count += 1 if @cells[row - 1][column + 1] && @cells[row - 1][column + 1].mine_count == -1
+				surrounding_cells << @cells[row - 1][column + 1] if @cells[row - 1][column + 1]
 			end
 		end
 
 		if row < row_index
 			if column > 0
-				mine_count += 1 if @cells[row + 1][column - 1] && @cells[row + 1][column - 1].mine_count == -1
+				surrounding_cells << @cells[row + 1][column - 1] if @cells[row + 1][column - 1]
 			end
-			mine_count += 1 if @cells[row + 1][column] && @cells[row + 1][column].mine_count == -1
+			surrounding_cells << @cells[row + 1][column] if @cells[row + 1][column]
 			if column < column_index
-				mine_count += 1 if @cells[row + 1][column + 1] && @cells[row + 1][column + 1].mine_count == -1
+				surrounding_cells << @cells[row + 1][column + 1] if @cells[row + 1][column + 1]
 			end
 		end
-
-		Cell.new(mine_count)
+		surrounding_cells
 	end
-
 end
