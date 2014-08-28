@@ -1,8 +1,10 @@
 class Cell
 
-	attr_accessor :mine_count
+	attr_accessor :mine_count, :row, :column
 
-	def initialize(mine_count)
+	def initialize(row, column, mine_count)
+		@row = row
+		@column = column
 		@mine_count = mine_count
 	end
 
@@ -15,6 +17,6 @@ class Cell
 	def as_json(options = {})
 		mine_count = (@mine_count == 0) ? '' : @mine_count
 		cell_colour = colour()
-		{ :mine_count => mine_count.to_s, :cell_colour => cell_colour }
+		{:row => @row, :column => @column, :mine_count => mine_count.to_s, :cell_colour => cell_colour }
 	end
 end

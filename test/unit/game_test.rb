@@ -28,7 +28,7 @@ class GameTest < Test::Unit::TestCase
 		Board.expects(:new).with(BoardModes::BEGINNER).returns(mock_board)
 
 		game = Game.new BoardModes::BEGINNER
-		expected_map = {:status => 'IN_PROGRESS', :cell => {:mine_count => '1', :cell_colour => "green"}}
+		expected_map = {:status => 'IN_PROGRESS', :cell => {:row => 0, :column => 0, :mine_count => '1', :cell_colour => "green"}}
 
 		output = game.reveal_cell(0,0)
 
@@ -41,7 +41,7 @@ class GameTest < Test::Unit::TestCase
 		Board.expects(:new).with(BoardModes::BEGINNER).returns(mock_board)
 		
 		game = Game.new BoardModes::BEGINNER
-		expected_map = {:status => 'GAME_OVER', :cell => {:mine_count => "-1", :cell_colour => nil}}
+		expected_map = {:status => 'GAME_OVER', :cell => {:row => 1, :column => 1, :mine_count => "-1", :cell_colour => nil}}
 
 		output = game.reveal_cell(1,1)
 

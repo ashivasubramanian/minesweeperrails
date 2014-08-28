@@ -81,7 +81,7 @@ class GamesControllerTest < ActionController::TestCase
 		get :new
 
 	 	response = get :reveal, :row => 2, :column => 2, :format => :json
-	 	expected_json = {:status => "GAME_OVER", :cell => {:mine_count => "-1",:cell_colour => nil}}
+	 	expected_json = {:status => "GAME_OVER", :cell => {:row => 2,:column => 2,:mine_count => "-1",:cell_colour => nil}}
 		assert_equal expected_json.to_json, response.body
 
 		Board.unstub(:new)
@@ -93,7 +93,7 @@ class GamesControllerTest < ActionController::TestCase
 		get :new
 
 		response = get :reveal, :row => 2, :column => 1, :format => :json
-		expected_json = {:status => "IN_PROGRESS", :cell => {:mine_count => "1",:cell_colour => "green"}}
+		expected_json = {:status => "IN_PROGRESS", :cell => {:row => 2,:column=>1,:mine_count => "1",:cell_colour => "green"}}
 		assert_equal expected_json.to_json, response.body
 
 		Board.unstub(:new)

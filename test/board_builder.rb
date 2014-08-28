@@ -6,7 +6,7 @@ class BoardBuilder
 	end
 
 	def with_mine_in(row, column)
-		@board.cells[row][column] = Cell.new(-1)
+		@board.cells[row][column] = Cell.new(row, column, -1)
 		self
 	end
 

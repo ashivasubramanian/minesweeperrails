@@ -31,7 +31,7 @@ class Board
 			row = rand(@mode.rows)
 			column = rand(@mode.columns)
 			unless (@cells[row][column])
-				@cells[row][column] = Cell.new(-1)
+				@cells[row][column] = Cell.new(row, column, -1)
 				mine_count += 1
 			end
 		end
@@ -49,7 +49,7 @@ class Board
 
 	def calculate_mine_count_around_cell(row, column)
 		mine_count = surrounding_cells(row, column).count{|cell| cell.mine_count == -1}
-		Cell.new(mine_count)
+		Cell.new(row, column, mine_count)
 	end
 
 	def surrounding_cells(row, column)
