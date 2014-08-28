@@ -93,4 +93,36 @@ class BoardTest < Test::Unit::TestCase
 		assert_equal expected_string, actual_string
 	end
 
+	def test_should_return_contiguous_empty_cells_for_single_mine
+		board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(2,3).build
+		expected_map = board.cells.flatten - [board.cells[0][0], board.cells[1][2], board.cells[1][3],
+						board.cells[1][4], board.cells[2][2], board.cells[2][3],
+						board.cells[2][4], board.cells[3][2], board.cells[3][3],
+						board.cells[3][4]]
+
+		output = board.contiguous_empty_cells(0,0)
+
+		assert_equal expected_map, output.sort!
+	end
+
+	def test_should_return_corner_contiguous_empty_cells
+		board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(0,3)
+								.with_mine_in(1,3).with_mine_in(2,3)
+								.with_mine_in(2,2).with_mine_in(2,1)
+								.build
+		expected_map = [board.cells[0][1]] 
+
+		output = board.contiguous_empty_cells(0,0)
+
+		assert_equal expected_map, output
+	end
+
+	def test_should_return_empty_array_for_a_non_empty_cell
+		board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(0,0).build
+		expected_map = []
+
+		output = board.contiguous_empty_cells(1,0)
+
+		assert_equal expected_map, output
+	end
 end

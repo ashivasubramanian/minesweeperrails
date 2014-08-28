@@ -19,4 +19,14 @@ class Cell
 		cell_colour = colour()
 		{:row => @row, :column => @column, :mine_count => mine_count.to_s, :cell_colour => cell_colour }
 	end
+
+	def <=>(cell)
+		return 0 if row == cell.row && column == cell.column
+		if row == cell.row
+			return -1 if column < cell.column
+			return 1 if column > cell.column
+		end
+		return -1 if row < cell.row
+		return 1 if row > cell.row
+	end
 end

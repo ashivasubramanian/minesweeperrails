@@ -24,6 +24,13 @@ class Board
 		board_as_string
 	end
 
+	def contiguous_empty_cells(row, column)
+		return [] if @cells[row][column].mine_count != 0
+		empty_cells = surrounding_empty_cells(row, column)
+		already_processed_cells = [@cells[row][column]]
+		empty_cells | get_contiguous_empty_cells(empty_cells, already_processed_cells)[0]
+	end
+
 	private
 	def fill_required_cells_with_mines
 		mine_count = 0
@@ -83,5 +90,22 @@ class Board
 			end
 		end
 		surrounding_cells
+	end
+
+	def surrounding_empty_cells(row, column)
+		surrounding_cells(row, column).select{|cell| cell.mine_count == 0}
+	end
+
+	def get_contiguous_empty_cells(empty_cells, already_processed_cells)
+		empty_cells.each do |cell|
+			cells = surrounding_empty_cells(cell.row, cell.column)
+			cells.reject! {|cell| empty_cells.member? cell}
+			cells.reject! {|cell| already_processed_cells.member? cell}
+			already_processed_cells = already_processed_cells | [cell]
+			empty_cells = empty_cells | cells
+			contiguous_empty_cells, already_processed_cells = get_contiguous_empty_cells(cells, already_processed_cells)
+			empty_cells = empty_cells | contiguous_empty_cells
+		end
+		[empty_cells, already_processed_cells]
 	end
 end
