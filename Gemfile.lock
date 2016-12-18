@@ -72,7 +72,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mocha
+  mocha (= 1.2.1)
   rails (= 3.0.4)
 
 BUNDLED WITH

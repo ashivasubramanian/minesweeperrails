@@ -2,6 +2,7 @@ require 'test/unit'
 require 'test_helper'
 require 'board_builder'
 require 'board_modes'
+require 'mocha/test_unit'
 
 class GameTest < Test::Unit::TestCase
 

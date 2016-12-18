@@ -1,5 +1,6 @@
 require 'test_helper'
 require 'board_builder'
+require 'mocha/test_unit'
 
 class GamesControllerTest < ActionController::TestCase
 	test "should be successful" do
