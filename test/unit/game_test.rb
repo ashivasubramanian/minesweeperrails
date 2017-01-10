@@ -6,29 +6,29 @@ require 'mocha/test_unit'
 
 class GameTest < Test::Unit::TestCase
 
-	def test_reveal_cell_should_return_a_map_with_In_Progress_game_status
+	def test_reveal_cell_should_return_the_correct_Cell_object_if_user_clicks_on_a_non_mine_cell
 		mock_board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(1,1).build
 		Board.expects(:new).with(BoardModes::BEGINNER).returns(mock_board)
 
 		game = Game.new BoardModes::BEGINNER
-		expected_map = {:cell => {:row => 0, :column => 0, :mine_count => '1', :cell_colour => "green"}}
+		expected = mock_board.cells[0][0]
 
 		output = game.reveal_cell(0,0)
 
-		assert_equal expected_map, output
+		assert_equal expected, output
 		Board.unstub(:new)
 	end
 
-	def test_reveal_cell_should_return_a_map_with_Game_Over_game_status
+	def test_reveal_cell_should_return_the_correct_Cell_object_if_user_clicks_on_a_mine_cell
 		mock_board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(1,1).build
 		Board.expects(:new).with(BoardModes::BEGINNER).returns(mock_board)
 		
 		game = Game.new BoardModes::BEGINNER
-		expected_map = {:cell => {:row => 1, :column => 1, :mine_count => "-1", :cell_colour => nil}}
+		expected = mock_board.cells[1][1]
 
 		output = game.reveal_cell(1,1)
 
-		assert_equal expected_map, output
+		assert_equal expected, output
 		Board.unstub(:new)
 	end
 

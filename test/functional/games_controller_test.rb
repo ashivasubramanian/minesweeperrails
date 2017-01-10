@@ -76,26 +76,24 @@ class GamesControllerTest < ActionController::TestCase
 	 	assert_select "#board td", "&nbsp;"
 	end
 
-	test "it should render mine count JSON when the user clicks on a mine cell" do
+	test "it should reveal mine count when the user clicks on a mine cell" do
 		mock_board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(2, 2).build
 		Board.expects(:new).with(BoardModes::BEGINNER).returns(mock_board)
 		get :new
 
 	 	response = get :reveal, :row => 2, :column => 2, :format => :json
-	 	expected_json = {:cell => {:row => 2,:column => 2,:mine_count => "-1",:cell_colour => nil}}
-		assert_equal expected_json.to_json, response.body
+		assert_select 'td', {text: -1, count: 1}
 
 		Board.unstub(:new)
 	end
 
-	test "it should render mine count JSON when the user clicks on a non-mine cell" do
+	test "it should reveal mine count when the user clicks on a non-mine cell" do
 		mock_board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(2, 2).build
 		Board.expects(:new).with(BoardModes::BEGINNER).returns(mock_board)
 		get :new
 
 		response = get :reveal, :row => 2, :column => 1, :format => :json
-		expected_json = {:cell => {:row => 2,:column=>1,:mine_count => "1",:cell_colour => "green"}}
-		assert_equal expected_json.to_json, response.body
+		assert_select 'td[style*=color:green]', {text: 1, count: 1}
 
 		Board.unstub(:new)
 	end

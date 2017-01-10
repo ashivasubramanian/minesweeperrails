@@ -7,7 +7,7 @@ class Game
 	end
 
 	def reveal_cell(row, column)
-		{:cell => @board.cells[row][column].as_json}
+		@board.cells[row][column]
 	end
 
 end

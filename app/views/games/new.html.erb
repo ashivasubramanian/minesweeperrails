@@ -40,7 +40,7 @@
 					<%
 						(0..column_count).each do |column_index|
 					%>
-					<td> &nbsp; </td>
+					<%= render :partial => 'cell', :locals => {:row => row_index, :column => column_index} %>
 					<%
 						end
 					%>
