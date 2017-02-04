@@ -30,9 +30,12 @@ class GamesController < ApplicationController
 
 		session_id_from_cookie = request.session_options[:id]
 		game = session[session_id_from_cookie]
-		cell = game.reveal_cell(row, column)
+		cells = game.reveal_cell(row, column)
 		render :update do |page|
-			 page["cell_#{row}_#{column}"].replace :partial => 'cell', :locals => {:row => row, :column => column, :cell => cell}
+			cells.each do |cell|
+				cell_row, cell_column = cell.row, cell.column
+				page["cell_#{cell_row}_#{cell_column}"].replace :partial => 'cell', :locals => {:row => cell_row, :column => cell_column, :cell => cell}
+			end
 		end
 	end
 
