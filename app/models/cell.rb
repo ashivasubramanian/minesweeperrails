@@ -14,12 +14,6 @@ class Cell
 		return 'red' if mine_count >= 4
 	end
 
-	def as_json(options = {})
-		mine_count = (@mine_count == 0) ? '' : @mine_count
-		cell_colour = colour()
-		{:row => @row, :column => @column, :mine_count => mine_count.to_s, :cell_colour => cell_colour }
-	end
-
 	def <=>(cell)
 		return 0 if row == cell.row && column == cell.column
 		if row == cell.row

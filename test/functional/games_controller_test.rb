@@ -98,6 +98,17 @@ class GamesControllerTest < ActionController::TestCase
 		Board.unstub(:new)
 	end
 
+	test "it should reveal mine count as empty string when the user clicks on a cell with zero count" do
+		mock_board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(2, 2).build
+		Board.expects(:new).with(BoardModes::BEGINNER).returns(mock_board)
+		get :new
+
+		response = get :reveal, :row => 7, :column => 1, :format => :json
+		assert_select '#cell_7_1', {text: '', count: 1}
+
+		Board.unstub(:new)
+	end
+
 	test "it should open all contiguous empty cells if the current cell is empty" do
 		mock_board = BoardBuilder.new(BoardModes::BEGINNER).with_mine_in(0,3).with_mine_in(1,3).with_mine_in(2,3)
 				.with_mine_in(3,3).with_mine_in(3,2).with_mine_in(3,1).with_mine_in(3,0).build
@@ -105,10 +116,10 @@ class GamesControllerTest < ActionController::TestCase
 		get :new
 		
 		response = get :reveal, :row => 0, :column => 0
-		assert_select '#cell_0_0', '0'
-		assert_select '#cell_0_1', '0'
-		assert_select '#cell_1_0', '0'
-		assert_select '#cell_1_1', '0'
+		assert_select '#cell_0_0', ''
+		assert_select '#cell_0_1', ''
+		assert_select '#cell_1_0', ''
+		assert_select '#cell_1_1', ''
 
 		Board.unstub(:new)
 	end

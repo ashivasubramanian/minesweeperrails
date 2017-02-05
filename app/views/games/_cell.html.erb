@@ -1,5 +1,5 @@
 <% if cell %>
-	<td id='cell_<%=row%>_<%=column%>' style='color:<%= cell.colour %>; background-color: white;'> <%= cell.mine_count %> </td>
+	<td id='cell_<%=row%>_<%=column%>' style='color:<%= cell.colour %>; background-color: white;'> <%= mine_count(cell) %> </td>
 <% else %>
 	<td id="cell_<%=row%>_<%=column%>" onclick="<%= remote_function :method => :get, :url => {:controller => :games, :action => :reveal, :row => row, :column => column}%>"> &nbsp; </td>
 <% end %>
